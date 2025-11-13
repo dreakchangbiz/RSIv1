@@ -1,3 +1,7 @@
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+export const revalidate = 1800; // 若檔案裡已經有 revalidate，就保留一個即可
+
 import { NextResponse } from "next/server";
 import { fetchListedCompanies, fetchDailyOHLC } from "@/lib/twse";
 import { analyze } from "@/lib/indicators";
