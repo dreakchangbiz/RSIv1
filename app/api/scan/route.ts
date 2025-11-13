@@ -2,8 +2,9 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 import { NextResponse } from "next/server";
-import { fetchListedCompanies, fetchDailyOHLC } from "@/lib/twse";
-import { analyze } from "@/lib/indicators";
+import { fetchListedCompanies, fetchDailyOHLC } from "../../../lib/twse";
+import { analyze } from "../../../lib/indicators";
+
 
 
 const MAX_CODES = parseInt(process.env.MAX_CODES || "300", 10);
